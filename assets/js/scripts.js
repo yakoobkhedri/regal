@@ -14,12 +14,12 @@ var banner = new Swiper(".banner", {
   },
   pagination: {
     el: ".swiper-pagination",
-  },
+  }
 });
 var brands = new Swiper(".brands", {
   loop: true,
   autoplay: true,
-  slidesPerView: 2.5,
+  slidesPerView: 2.7,
   spaceBetween: 48,
   breakpoints: {
     576: {
@@ -27,6 +27,27 @@ var brands = new Swiper(".brands", {
     },
     768: {
       slidesPerView: 4,
+    },
+    992: {
+      slidesPerView: 5,
+    },
+    1200: {
+      slidesPerView: 6,
+    }
+  },
+});
+var services = new Swiper(".services", {
+  loop: true,
+  autoplay: true,
+  slidesPerView: 3,
+  spaceBetween: 32,
+  breakpoints: {
+    576: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 48,
     },
     992: {
       slidesPerView: 5,
