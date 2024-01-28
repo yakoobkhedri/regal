@@ -265,16 +265,25 @@ header a:hover,header ul a.active,footer ul a:hover{
    .w-lg-84{
     width: 84px;
    }
+   .max-w-lg-100{
+    max-width: 100%;
+   }
 }
 
 @media only screen and (max-width:768px) {
 }
 @media only screen and (max-width:576px) {
+    .h-sm-40{
+        height: 40px;
+    }
     .h-sm-88{
        height: 88px;
     }
     .w-sm-88{
        width: 88px;
+    }
+    .w-sm-112{
+        width: 112px;
     }
     .h-sm-112{
         height: 112px;
