@@ -56,6 +56,10 @@ var services = new Swiper(".services", {
       slidesPerView: 6,
     }
   },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 var gallery = new Swiper(".gallery", {
   loop: true,

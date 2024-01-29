@@ -34,7 +34,10 @@ a {
 .object-cover {
     object-fit: cover;
 }
-
+/* rotate */
+.-rotate-5{
+    transform: rotate(-5deg);
+}
 /* z index */
 .-z-1 {
     z-index: -1;
@@ -64,11 +67,21 @@ a {
     max-width: 480px;
     width: 100%;
 }
+.max-w-1056{
+    max-width: 1056px;
+    width: 100%;
+}
 /* border */
 .border-main{
     border: 1px solid #2C3F56;
 }
 /* width */
+.w-16{
+    width: 16px;
+}
+.w-40{
+    width: 40px;
+}
 .w-48{
     width: 48px;
 }
@@ -78,10 +91,19 @@ a {
 .w-144{
     width: 144px;
 }
+.w-178{
+    width: 178px;
+}
 .w-193 {
     width: 193px;
 }
 /* height */
+.h-16{
+    height: 16px;
+}
+.h-40{
+    height: 40px;
+}
 .h-48{
     height: 48px;
 }
@@ -175,15 +197,30 @@ a {
 .left-54{
     left: 54px;
 }
+.left-80{
+    left: 80px;
+}
 /* top */
+.top-auto{
+    top: auto!important;
+}
 .top-117{
     top: 117px;
 }
 /* right */
+.-right-auto{
+    right: auto;
+}
+.-right-7{
+    right: -7px;
+}
 .-right-12{
     right: -12px;
 }
 /* bottom */
+.-bottom-65{
+    bottom: -65px!important;
+}
 .bottom-116{
     bottom: 116px!important;
 }
@@ -204,6 +241,18 @@ a {
 }
 .swiper-pagination-bullet-active{
     background-color: white;
+}
+.swiper-button-prev.after::after,.swiper-button-next.after::after{
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+/* dropdown */
+.dropdown-toggle::after {
+    content: url('../img/arrow-down.png');
+    border-top: 0;
+    vertical-align: -4px;
+    margin-left: 0;
 }
 /* global styles */
 .outline-none {
