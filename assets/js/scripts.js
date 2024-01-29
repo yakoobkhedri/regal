@@ -38,7 +38,6 @@ var brands = new Swiper(".brands", {
 });
 var services = new Swiper(".services", {
   loop: true,
-  autoplay: true,
   slidesPerView: 3,
   spaceBetween: 32,
   breakpoints: {
@@ -50,10 +49,10 @@ var services = new Swiper(".services", {
       spaceBetween: 48,
     },
     992: {
-      slidesPerView: 5,
+      slidesPerView: 6,
     },
     1200: {
-      slidesPerView: 6,
+      slidesPerView: 7,
     }
   },
   navigation: {
@@ -94,3 +93,50 @@ accordionBtn.forEach((item)=>{
     item.nextElementSibling.classList.add('active');
   })
 })
+
+// service slider tab
+
+let SlideHover=Array.from(document.getElementsByClassName('slide-hover'));
+let slideContent=Array.from(document.getElementsByClassName('slide-content'));
+let SlideHover2=Array.from(document.getElementsByClassName('slide-hover2'));
+let slideContent2=Array.from(document.getElementsByClassName('slide-content2'));
+
+SlideHover.forEach((tab) => {
+  tab.addEventListener('click', function() {
+    SlideHover.forEach((tabs) => {tabs.classList.remove('active')});
+    tab.classList.add('active');
+      let tabId = tab.dataset.id;
+      slideContent.forEach((content) => {
+          let contentId = content.dataset.id;
+          if (tabId === contentId) {
+              content.classList.remove('d-none');
+              content.classList.add('d-block');
+          } else {
+              content.classList.add('d-none');
+              content.classList.remove('d-block');
+          }
+      })
+  })
+})
+SlideHover2.forEach((tab) => {
+  tab.addEventListener('click', function() {
+    SlideHover2.forEach((tabs) => {tabs.classList.remove('active')});
+    tab.classList.add('active');
+      let tabId = tab.dataset.id;
+      slideContent2.forEach((content) => {
+          let contentId = content.dataset.id;
+          if (tabId === contentId) {
+            content.classList.remove('d-none');
+            content.classList.add('d-block');
+        } else {
+            content.classList.add('d-none');
+            content.classList.remove('d-block');
+          }
+      })
+  })
+})
+  // gallery Fancybox
+  Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+    
+  });
