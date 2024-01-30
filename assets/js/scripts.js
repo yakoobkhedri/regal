@@ -82,13 +82,13 @@ AOS.init();
 
 // accordion
 
-let accordionBtn=Array.from(document.getElementsByClassName('accordion-btn'));
-let accordionContent=Array.from(document.getElementsByClassName('accordion-content'));
+let accordionBtn = Array.from(document.getElementsByClassName('accordion-btn'));
+let accordionContent = Array.from(document.getElementsByClassName('accordion-content'));
 
-accordionBtn.forEach((item)=>{
-  item.addEventListener('click',function () {
-    accordionContent.forEach((items)=>{items.classList.remove('active')});
-    accordionBtn.forEach((items)=>{items.classList.remove('active')});
+accordionBtn.forEach((item) => {
+  item.addEventListener('click', function () {
+    accordionContent.forEach((items) => { items.classList.remove('active') });
+    accordionBtn.forEach((items) => { items.classList.remove('active') });
     item.classList.add('active');
     item.nextElementSibling.classList.add('active');
   })
@@ -96,47 +96,72 @@ accordionBtn.forEach((item)=>{
 
 // service slider tab
 
-let SlideHover=Array.from(document.getElementsByClassName('slide-hover'));
-let slideContent=Array.from(document.getElementsByClassName('slide-content'));
-let SlideHover2=Array.from(document.getElementsByClassName('slide-hover2'));
-let slideContent2=Array.from(document.getElementsByClassName('slide-content2'));
+let SlideHover = Array.from(document.getElementsByClassName('slide-hover'));
+let slideContent = Array.from(document.getElementsByClassName('slide-content'));
+let SlideHover2 = Array.from(document.getElementsByClassName('slide-hover2'));
+let slideContent2 = Array.from(document.getElementsByClassName('slide-content2'));
 
 SlideHover.forEach((tab) => {
-  tab.addEventListener('click', function() {
-    SlideHover.forEach((tabs) => {tabs.classList.remove('active')});
+  tab.addEventListener('click', function () {
+    SlideHover.forEach((tabs) => { tabs.classList.remove('active') });
     tab.classList.add('active');
-      let tabId = tab.dataset.id;
-      slideContent.forEach((content) => {
-          let contentId = content.dataset.id;
-          if (tabId === contentId) {
-              content.classList.remove('d-none');
-              content.classList.add('d-block');
-          } else {
-              content.classList.add('d-none');
-              content.classList.remove('d-block');
-          }
-      })
+    let tabId = tab.dataset.id;
+    slideContent.forEach((content) => {
+      let contentId = content.dataset.id;
+      if (tabId === contentId) {
+        content.classList.remove('d-none');
+        content.classList.add('d-block');
+      } else {
+        content.classList.add('d-none');
+        content.classList.remove('d-block');
+      }
+    })
   })
 })
 SlideHover2.forEach((tab) => {
-  tab.addEventListener('click', function() {
-    SlideHover2.forEach((tabs) => {tabs.classList.remove('active')});
+  tab.addEventListener('click', function () {
+    SlideHover2.forEach((tabs) => { tabs.classList.remove('active') });
     tab.classList.add('active');
-      let tabId = tab.dataset.id;
-      slideContent2.forEach((content) => {
-          let contentId = content.dataset.id;
-          if (tabId === contentId) {
-            content.classList.remove('d-none');
-            content.classList.add('d-block');
-        } else {
-            content.classList.add('d-none');
-            content.classList.remove('d-block');
-          }
-      })
+    let tabId = tab.dataset.id;
+    slideContent2.forEach((content) => {
+      let contentId = content.dataset.id;
+      if (tabId === contentId) {
+        content.classList.remove('d-none');
+        content.classList.add('d-block');
+      } else {
+        content.classList.add('d-none');
+        content.classList.remove('d-block');
+      }
+    })
   })
 })
-  // gallery Fancybox
-  Fancybox.bind("[data-fancybox]", {
-    // Your custom options
-    
-  });
+
+
+// gallery Fancybox
+Fancybox.bind("[data-fancybox]", {
+  // Your custom options
+
+});
+
+// faq tab
+
+let faqsTab = Array.from(document.getElementsByClassName('faqsTab'));
+let faqTabContent = Array.from(document.getElementsByClassName('faqTabContent'));
+
+faqsTab.forEach((tab) => {
+  tab.addEventListener('click', function () {
+    faqsTab.forEach((tabs) => { tabs.classList.remove('active') });
+    tab.classList.add('active');
+    let tabId = tab.dataset.id;
+    faqTabContent.forEach((content) => {
+      let contentId = content.dataset.id;
+      if (tabId === contentId) {
+        content.classList.remove('d-none');
+        content.classList.add('d-block');
+      } else {
+        content.classList.add('d-none');
+        content.classList.remove('d-block');
+      }
+    })
+  })
+})

@@ -67,6 +67,10 @@ a {
     max-width: 480px;
     width: 100%;
 }
+.max-w-706{
+    max-width: 706px;
+    width: 100%;
+}
 .max-w-1056{
     max-width: 1056px;
     width: 100%;
@@ -85,6 +89,9 @@ a {
 .w-48{
     width: 48px;
 }
+.w-54{
+    width: 54px;
+}
 .w-112 {
     width: 112px;
 }
@@ -93,6 +100,9 @@ a {
 }
 .w-144{
     width: 144px;
+}
+.w-160{
+    width: 160px;
 }
 .w-178{
     width: 178px;
@@ -103,6 +113,9 @@ a {
 /* height */
 .h-16{
     height: 16px;
+}
+.h-37{
+    height:37px
 }
 .h-40{
     height: 40px;
@@ -183,8 +196,6 @@ a {
 .rounded-24 {
     border-radius: 24px;
 }
-/* opacity */
-
 /* background */
 .bg-main {
     background: #2C3F56;
@@ -216,6 +227,12 @@ a {
 .top-auto{
     top: auto!important;
 }
+.top-3{
+    top: 3px;
+}
+.-top-15{
+    top: -15px;
+}
 .top-117{
     top: 117px;
 }
@@ -230,6 +247,9 @@ a {
     right: -12px;
 }
 /* bottom */
+.-bottom-10{
+    bottom: -10px!important;
+}
 .-bottom-65{
     bottom: -65px!important;
 }
@@ -328,6 +348,14 @@ header a:hover,header ul a.active,footer ul a:hover{
 }
 .accordion-content.active{
     max-height: 1000px;
+}
+/* faqs tab */
+.faqsTab.active{
+    color:white!important;
+    background-color:#2C3F56;
+}
+.faqsTab.active path{
+    fill:#2C3F56;
 }
 /* responsive */
 @media only screen and (max-width:1400px) {
