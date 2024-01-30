@@ -88,6 +88,9 @@ a {
 .w-112 {
     width: 112px;
 }
+.w-121 {
+    width: 121px;
+}
 .w-144{
     width: 144px;
 }
@@ -369,8 +372,22 @@ header a:hover,header ul a.active,footer ul a:hover{
  .fs-sm-14{
     font-size: 14px;
  }
+ .bg-sm-white{
+    background-color: white;
+ }
+ .text-sm-secondary{
+    color:#2C3F56!important;
+ }
+ .bg-sm-transparen{
+    background-color: transparent!important;
+ }
+ .text-sm-white{
+    color:white!important;
+ }
 }
 
 @media only screen and (max-width:400px) {
-
+.w-xs-50{
+    width:50%;
+}
 }
