@@ -282,22 +282,39 @@ a {
     font-size: 17px;
     font-weight: bold;
 }
-.slide-hover div img:last-child,.slide-hover2 div img:last-child{
+.slide-hover div img:last-child,.slide-hover2 div img:last-child,.slide-btn div img:last-child{
     opacity: 0;
     transition: all .4s;
     width: 55px;
 }
-.slide-hover div img:first-child,.slide-hover2 div img:first-child{
+.slide-hover div img:first-child,.slide-hover2 div img:first-child,.slide-btn div img:first-child{
     opacity: 1;
     transition: all .4s;
 }
-.slide-hover:hover div img:last-child,.slide-hover.active div img:last-child,.slide-hover2:hover div img:last-child,.slide-hover2.active div img:last-child{
+.slide-hover:hover div img:last-child,
+.slide-hover.active div img:last-child,
+.slide-hover2:hover div img:last-child,
+.slide-hover2.active div img:last-child,
+.slide-btn:hover div img:last-child,
+.slide-btn.active div img:last-child
+{
    opacity: 1;
 }
-.slide-hover:hover div img:first-child,.slide-hover.active div img:first-child,.slide-hover2:hover div img:first-child,.slide-hover2.active div img:first-child{
+.slide-hover:hover div img:first-child,
+.slide-hover.active div img:first-child,
+.slide-hover2:hover div img:first-child,
+.slide-hover2.active div img:first-child,
+.slide-btn:hover div img:first-child,
+.slide-btn.active div img:first-child
+{
     opacity: 0;
  }
- .slide-hover:hover div, .slide-hover.active div, .slide-hover2:hover div, .slide-hover2.active div{
+ .slide-hover:hover div,
+  .slide-hover.active div,
+   .slide-hover2:hover div,
+    .slide-hover2.active div,
+    .slide-btn2:hover div,
+    .slide-btn2.active div{
     background-color: #2c3f56;
  }
 /* dropdown */

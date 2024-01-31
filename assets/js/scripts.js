@@ -97,10 +97,71 @@ accordionBtn.forEach((item) => {
 // service slider tab
 
 let SlideHover = Array.from(document.getElementsByClassName('slide-hover'));
+let serviceMnu = Array.from(document.getElementsByClassName('serviceMnu'));
+let serviceMnu2 = Array.from(document.getElementsByClassName('serviceMnu2'));
 let slideContent = Array.from(document.getElementsByClassName('slide-content'));
+let cleanContent = Array.from(document.getElementsByClassName('clean-content'));
+let tailorContent = Array.from(document.getElementsByClassName('tailor-content'));
 let SlideHover2 = Array.from(document.getElementsByClassName('slide-hover2'));
+let slideBtn = Array.from(document.getElementsByClassName('slide-btn'));
 let slideContent2 = Array.from(document.getElementsByClassName('slide-content2'));
 
+serviceMnu.forEach((tab) => {
+  tab.addEventListener('click', function () {
+    let tabId = tab.dataset.service;
+    cleanContent.forEach((content) => {
+      let contentId = content.dataset.service;
+      if (tabId === contentId) {
+        content.classList.remove('d-none');
+        content.classList.add('d-block');
+      } else {
+        content.classList.add('d-none');
+        content.classList.remove('d-block');
+      }
+    })
+  })
+})
+serviceMnu.forEach((tab) => {
+  tab.addEventListener('click', function () {
+    let tabId = tab.dataset.service;
+    SlideHover2.forEach((content) => {
+      let contentId = content.dataset.service;
+      if (tabId === contentId) {
+        content.classList.add('active');
+      } else {
+        content.classList.remove('active');
+      }
+    })
+  })
+})
+serviceMnu2.forEach((tab) => {
+  tab.addEventListener('click', function () {
+    let tabId = tab.dataset.service2;
+    tailorContent.forEach((content) => {
+      let contentId = content.dataset.service2;
+      if (tabId === contentId) {
+        content.classList.remove('d-none');
+        content.classList.add('d-block');
+      } else {
+        content.classList.add('d-none');
+        content.classList.remove('d-block');
+      }
+    })
+  })
+})
+serviceMnu2.forEach((tab) => {
+  tab.addEventListener('click', function () {
+    let tabId = tab.dataset.service2;
+    SlideHover.forEach((content) => {
+      let contentId = content.dataset.service2;
+      if (tabId === contentId) {
+        content.classList.add('active');
+      } else {
+        content.classList.remove('active');
+      }
+    })
+  })
+})
 SlideHover.forEach((tab) => {
   tab.addEventListener('click', function () {
     SlideHover.forEach((tabs) => { tabs.classList.remove('active') });
@@ -142,7 +203,14 @@ Fancybox.bind("[data-fancybox]", {
   // Your custom options
 
 });
+Fancybox.bind("[data-fancybox1]", {
+  // Your custom options
 
+});
+Fancybox.bind("[data-fancybox1]", {
+  // Your custom options
+
+});
 // faq tab
 
 let faqsTab = Array.from(document.getElementsByClassName('faqsTab'));
@@ -157,10 +225,10 @@ faqsTab.forEach((tab) => {
       let contentId = content.dataset.id;
       if (tabId === contentId) {
         content.classList.remove('d-none');
-        content.classList.add('d-block');
+        content.classList.add('d-flex');
       } else {
         content.classList.add('d-none');
-        content.classList.remove('d-block');
+        content.classList.remove('d-flex');
       }
     })
   })
