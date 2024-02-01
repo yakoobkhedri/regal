@@ -199,17 +199,119 @@ SlideHover2.forEach((tab) => {
 
 
 // gallery Fancybox
-Fancybox.bind("[data-fancybox]", {
-  // Your custom options
-
+Fancybox.bind('[data-fancybox="gallery"]', {
+  // Your custom options for a specific gallery
 });
-Fancybox.bind("[data-fancybox1]", {
-  // Your custom options
-
+Fancybox.bind('[data-fancybox="gallery2"]', {
+  // Your custom options for a specific gallery
 });
-Fancybox.bind("[data-fancybox1]", {
-  // Your custom options
-
+Fancybox.bind('[data-fancybox="gallery3"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery4"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery5"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery6"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery7"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery8"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery9"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery10"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery11"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery12"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery13"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery14"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery15"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery16"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery17"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery18"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery19"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery20"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery21"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery22"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery23"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery24"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery25"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery26"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery27"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery28"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery29"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery30"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery31"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery32"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery33"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery34"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery35"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery36"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery37"]', {
+  // Your custom options for a specific gallery
+});
+Fancybox.bind('[data-fancybox="gallery38"]', {
+  // Your custom options for a specific gallery
 });
 // faq tab
 

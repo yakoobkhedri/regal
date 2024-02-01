@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "yekanBakh-Regular";
-    src: url('../fonts/YekanBakhFaNum-Regular.woff') format("woff");
+    font-family: "gilroy-Regular";
+    src: url('../fonts/Gilroy-Light.otf') format("otf");
 }
 
 @font-face {
-    font-family: "yekanBakh-Bold";
-    src: url('../fonts/YekanBakhFaNum-Bold.woff') format("woff");
+    font-family: "gilroy-Bold";
+    src: url('../fonts/Gilroy-ExtraBold.otf') format("otf");
 }
 
 html {
@@ -13,12 +13,12 @@ html {
 }
 
 body {
-    /* font-family: "yekanBakh-Regular"; */
+    font-family: "gilroy-Regular";
     user-select: none;
 }
 
 .font-bold {
-    font-family: "yekanBakh-Bold";
+    font-family: "gilroy-Bold";
 }
 
 a {
