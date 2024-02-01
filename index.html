@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/aos.css'>
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <title>صفحه اصلی</title>
 </head>
 
@@ -85,7 +86,7 @@
          <div class="col-md-6">
           <div class="border border-white px-4 pe-3 text-white inputBox rounded-4 h-48 position-relative pt-2 warning">
             <label class="text-white ms-3 -top-15 d-block p-1 bg-main position-absolute start-0">Date</label>
-            <!-- <svg class="position-absolute z-10 end-0 me-3 mt-2 top-3 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <svg class="position-absolute z-10 end-0 me-3 mt-2 top-3 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path d="M8 2V5" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M16 2V5" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M3.5 9.08984H20.5" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -96,8 +97,8 @@
               <path d="M11.9955 16.7002H12.0045" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M8.29431 13.7002H8.30329" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M8.29431 16.7002H8.30329" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg> -->
-            <input type="date" class="bg-transparent w-100 text-white h-100 outline-none border-0">
+              </svg>
+            <input  type="text" name="date" class="bg-transparent w-100 position-relative z-20 text-white h-100 outline-none border-0">
             <small class="fs-12 position-absolute d-none start-0 mt-1">This feild cannot be empty.</small>
           </div>
          </div>
@@ -290,29 +291,29 @@
         <h6 class="text-main font-bold">Tailoring</h6>
         <ul
           class="list-unstyled mb-0 ps-3 mt-4 fs-12 d-lg-flex flex-column align-items-center justify-content-center gap-5 fw-bold">
-          <li class="mb-3"><a href="" class="text-dark">Suit pants</a></li>
-          <li class="mb-3"><a href="" class="text-dark">Jacket & Blazar</a></li>
-          <li class="mb-3"><a href="" class="text-dark">Jeans Pants</a></li>
-          <li class="mb-3"><a href="" class="text-dark">Coat & Winter jacket</a></li>
-          <li class="mb-3"><a href="" class="text-dark">Shirt & T-shirt</a></li>
-          <li class="mb-3"><a href="" class="text-dark">Prom dresses & Dresses</a></li>
-          <li class="mb-3"><a href="" class="text-dark">Confirmation dresses</a></li>
-          <li class="mb-3"><a href="" class="text-dark">Wedding dresses</a></li>
-          <li class="mb-3"><a href="" class="text-dark">Skirt</a></li>
-          <li class="mb-3"><a href="" class="text-dark">Leather jacket & Fur coat</a></li>
-          <li class="mb-3"><a href="" class="text-dark">Leather pants</a></li>
-          <li class="mb-3"><a href="" class="text-dark">New zipper</a></li>
-          <li><a href="" class="text-dark">Curtains / Sofa covers / Bed covers</a></li>
+          <li data-bs-dismiss="offcanvas" aria-label="Close" data-service2="1" class="serviceMnu2 mb-3"><a href="#tailoring-service" class="text-dark">Suit pants</a></li>
+          <li data-bs-dismiss="offcanvas" aria-label="Close" data-service2="2" class="serviceMnu2 mb-3"><a href="#tailoring-service" class="text-dark">Jacket & Blazar</a></li>
+          <li data-bs-dismiss="offcanvas" aria-label="Close" data-service2="3" class="serviceMnu2 mb-3"><a href="#tailoring-service" class="text-dark">Jeans Pants</a></li>
+          <li data-bs-dismiss="offcanvas" aria-label="Close" data-service2="4" class="serviceMnu2 mb-3"><a href="#tailoring-service" class="text-dark">Coat & Winter jacket</a></li>
+          <li data-bs-dismiss="offcanvas" aria-label="Close" data-service2="5" class="serviceMnu2 mb-3"><a href="#tailoring-service" class="text-dark">Shirt & T-shirt</a></li>
+          <li data-bs-dismiss="offcanvas" aria-label="Close" data-service2="6" class="serviceMnu2 mb-3"><a href="#tailoring-service" class="text-dark">Prom dresses & Dresses</a></li>
+          <li data-bs-dismiss="offcanvas" aria-label="Close" data-service2="7" class="serviceMnu2 mb-3"><a href="#tailoring-service" class="text-dark">Confirmation dresses</a></li>
+          <li data-bs-dismiss="offcanvas" aria-label="Close" data-service2="8" class="serviceMnu2 mb-3"><a href="#tailoring-service" class="text-dark">Wedding dresses</a></li>
+          <li data-bs-dismiss="offcanvas" aria-label="Close" data-service2="9" class="serviceMnu2 mb-3"><a href="#tailoring-service" class="text-dark">Skirt</a></li>
+          <li data-bs-dismiss="offcanvas" aria-label="Close" data-service2="10" class="serviceMnu2 mb-3"><a href="#tailoring-service" class="text-dark">Leather jacket & Fur coat</a></li>
+          <li data-bs-dismiss="offcanvas" aria-label="Close" data-service2="11" class="serviceMnu2 mb-3"><a href="#tailoring-service" class="text-dark">Leather pants</a></li>
+          <li data-bs-dismiss="offcanvas" aria-label="Close" data-service2="13" class="serviceMnu2 mb-3"><a href="#tailoring-service" class="text-dark">New zipper</a></li>
+          <li data-bs-dismiss="offcanvas" aria-label="Close"><a href="#tailoring-service" class="text-dark">Curtains / Sofa covers / Bed covers</a></li>
         </ul>
         <h6 class="text-main font-bold mt-4">Dry cleaning</h6>
         <ul
           class="list-unstyled mb-0 ps-3 mt-4 fs-12 d-lg-flex flex-column align-items-center justify-content-center gap-5 fw-bold">
-          <li class="mb-3"><a href="" class="text-dark">Wardrobe clothes</a></li>
-          <li class="mb-3"><a href="" class="text-dark">Jacket & Coat</a></li>
-          <li class="mb-3"><a href="" class="text-dark">Women's Clothing</a></li>
-          <li class="mb-3"><a href="" class="text-dark">Linens</a></li>
-          <li class="mb-3"><a href="" class="text-dark">Diverse</a></li>
-          <li class="mb-3"><a href="" class="text-dark">Leather cleaner & Fur</a></li>
+          <li data-bs-dismiss="offcanvas" aria-label="Close" data-service="1" class="mb-3 serviceMnu"><a href="#cleaning-service" class="text-dark">Wardrobe clothes</a></li>
+          <li data-bs-dismiss="offcanvas" aria-label="Close" data-service="2" class="mb-3 serviceMnu"><a href="#cleaning-service" class="text-dark">Jacket & Coat</a></li>
+          <li data-bs-dismiss="offcanvas" aria-label="Close" data-service="3" class="mb-3 serviceMnu"><a href="#cleaning-service" class="text-dark">Women's Clothing</a></li>
+          <li data-bs-dismiss="offcanvas" aria-label="Close" data-service="4" class="mb-3 serviceMnu"><a href="#cleaning-service" class="text-dark">Diverse</a></li>
+          <li data-bs-dismiss="offcanvas" aria-label="Close" data-service="5" class="mb-3 serviceMnu"><a href="#cleaning-service" class="text-dark">Linens</a></li>
+          <li data-bs-dismiss="offcanvas" aria-label="Close" data-service="6" class="mb-3 serviceMnu"><a href="#cleaning-service" class="text-dark">Leather cleaner & Fur</a></li>
         </ul>
       </div>
     </div>
@@ -3475,6 +3476,10 @@
     </div>
   </footer>
 
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <script src="assets/js/fancybox.umd.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/swiper-bundle.min.js"></script>
